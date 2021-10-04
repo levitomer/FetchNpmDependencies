@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import isomerphicFetch from 'isomorphic-unfetch';
 import { formatDependencies } from '../utils/formatDependencies';
-import cache from '../middleware/redis';
+import cache from '../redis/cache';
 
 // Handles fetching dependencies
 export async function fetchDependencies(req: Request, res: Response) {

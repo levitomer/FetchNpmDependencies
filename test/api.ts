@@ -4,7 +4,7 @@ process.env.NODE_ENV = 'test';
 //Require the dev-dependencies
 import chai from 'chai';
 import chaiHttp from 'chai-http';
-import server from '../middleware/express';
+import server from '../src/index';
 let should = chai.should();
 
 chai.use(chaiHttp);

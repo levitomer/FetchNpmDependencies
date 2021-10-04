@@ -8,7 +8,6 @@ export default function validation(
 ) {
     const { package_name } = req.params;
     if (!validate(package_name).validForOldPackages) {
-        //check the data on redis store.
         res.send('Invalid registry Name');
     } else {
         next();
